@@ -53,7 +53,7 @@ class CartWidget extends StatelessWidget {
             height: 82,
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: isDarkMode ? theme.colorScheme.primary.withValues(alpha: 0.2) : const Color(0xFFF5A600),
+              color:  AppTheme.primaryColor,
               borderRadius: BorderRadius.circular(14),
             ),
             child: ClipRRect(

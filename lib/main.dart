@@ -1,9 +1,10 @@
+import 'package:e_comerce_project/Screens/auth/sign_in_screen.dart';
 import 'package:e_comerce_project/constants/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:e_comerce_project/providers/cart_provider.dart';
 import 'package:e_comerce_project/providers/product_provider.dart';
-import 'package:e_comerce_project/Screens/home/widgets/navagation_bar.dart';
+// import 'package:e_comerce_project/Screens/home/widgets/navagation_bar.dart';
 
 void main() {
   runApp(MultiProvider(
@@ -17,7 +18,7 @@ void main() {
         theme: AppTheme.lightTheme,      
         darkTheme: AppTheme.darkTheme,   
         themeMode: ThemeMode.system,
-        home: const NavagateBar(), 
+        home: const WelcomeScreen(), 
       ),
   ));
 }

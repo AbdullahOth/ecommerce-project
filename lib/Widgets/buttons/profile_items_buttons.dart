@@ -37,7 +37,7 @@ class _BuildProfileMenuItemsState extends State<BuildProfileMenuItems> {
         ),
         child: Icon(
           widget.icon,
-          color: theme.colorScheme.primary,
+          color: AppTheme.backgroundLight,
           size: 22,
         ),
       ),

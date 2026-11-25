@@ -66,7 +66,7 @@ class CardSummary extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: onCheckout,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFFFF6B1A),
+                  backgroundColor: AppTheme.primaryColor,
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),

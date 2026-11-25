@@ -15,11 +15,11 @@ class ChooseCardScreen extends StatefulWidget {
 }
 
 class _ChooseCardScreenState extends State<ChooseCardScreen> {
-  // Available card colors matching your UI
+  
   final List<Color> _cardColors = const [
-    Color(0xFF3E1168), // Deep Purple
-    Color.fromARGB(255, 33, 168, 116), // Medium Violet
-    Color.fromARGB(255, 83, 108, 211), // Soft Lavender
+    Color(0xFF3E1168), 
+    Color.fromARGB(255, 33, 168, 116), 
+    Color.fromARGB(255, 83, 108, 211), 
   ];
 
   int _selectedColorIndex = 0;

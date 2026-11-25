@@ -1,4 +1,5 @@
 import 'package:e_comerce_project/Screens/home/widgets/app_bar.dart';
+import 'package:e_comerce_project/Screens/home/widgets/product_skeleton.dart';
 import 'package:e_comerce_project/models/product/widgets/product_widgets.dart';
 import 'package:e_comerce_project/providers/cart_provider.dart';
 import 'package:e_comerce_project/providers/product_provider.dart';
@@ -143,7 +144,14 @@ class _HomeScreenState extends State<HomeScreen> {
           });
         },
         child: productProvider.isLoading && products.isEmpty
-            ? const Center(child: CircularProgressIndicator())
+            ? ListView.builder(
+          physics: const NeverScrollableScrollPhysics(),
+          itemCount: 5, 
+          padding: const EdgeInsets.all(12),
+          itemBuilder: (context, index) {
+            return const ProductSkeletonItem();
+          },
+        )
             : productProvider.error != null
                 ? Center(
                     child: Column(
@@ -241,10 +249,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                     const SnackBar(
                                       content: Text(
                                         'Added to cart!',
-                                        style: TextStyle(color: Colors.black),
+                                        style: TextStyle(color: AppTheme.surfaceLight),
                                       ),
                                       duration: Duration(milliseconds: 300),
-                                      backgroundColor: Colors.orangeAccent,
+                                      backgroundColor: AppTheme.primaryColor,
                                     ),
                                   );
                                 },

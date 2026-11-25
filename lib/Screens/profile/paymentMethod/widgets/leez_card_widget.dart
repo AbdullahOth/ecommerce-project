@@ -26,7 +26,10 @@ class LeezCardWidget extends StatelessWidget {
             bottom: 10,
             right: -18,
             left: -5,
-            child: Image.asset('images/LeezCard.png', fit: BoxFit.contain),
+            child: Image.asset(
+              'assets/images/LeezCard.png', 
+            fit: BoxFit.contain
+            ),
           ),
           Positioned(
             top: 0,

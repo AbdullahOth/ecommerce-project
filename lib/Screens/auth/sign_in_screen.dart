@@ -186,7 +186,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               backgroundColor: isDarkMode ? theme.colorScheme.surface : Colors.grey[350],
               ltext: 'continue with Google',
               textColor: isDarkMode ? Colors.white : Colors.black,
-              icon: Image.asset('images/googleIcon.png', width: 24, height: 24),
+              icon: Image.asset('assets/images/googleIcon.png', width: 24, height: 24),
               externalurl: "https://www.google.com/",
             ),
             const SizedBox(height: 12),

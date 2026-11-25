@@ -193,7 +193,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               ltext: 'continue with Google',
               textColor: isDarkMode ? Colors.white : Colors.black,
               icon: Image.asset(
-                'images/googleIcon.png',
+                'assets/images/googleIcon.png',
                 width: 24,
                 height: 24,
               ),
